@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>motokochan:recaptchaforsmf</id>
+
+	<file name="$languagedir/Modifications.english.php">
+		<operation>
+			<search position="end"></search>
+			<add><![CDATA[
+//reCAPTCHA for SMF
+$txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
+$txt['recaptcha_theme'] = 'reCAPTCHA Theme';
+$txt['recaptcha_theme_clean'] = 'Clean';
+$txt['recaptcha_theme_blackglass'] = 'Black Glass';
+$txt['recaptcha_theme_red'] = 'Red';
+$txt['recaptcha_theme_white'] = 'White';
+$txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
+$txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
+$txt['recaptcha_no_key_question'] = 'Don\'t have a key for reCAPTCHA?';
+$txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';]]></add>
+		</operation>
+	</file>
+
+</modification>
