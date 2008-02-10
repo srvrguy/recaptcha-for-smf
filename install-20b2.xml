@@ -7,7 +7,7 @@
 	<file name="$sourcedir/ManageRegistration.php">
 		<operation>
 			<search position="before"><![CDATA[
-			'disable_visual_verification' => isset($_POST['visual_verification_type']) ? (int) $_POST['visual_verification_type'] : 0,
+			'visual_verification_type' => isset($_POST['visual_verification_type']) ? (int) $_POST['visual_verification_type'] : 0,
 ]]></search>
 			<add><![CDATA[
 			'recaptcha_enabled' => isset($_POST['recaptchaEnable']) ? 1 : 0,
@@ -37,7 +37,7 @@
 
 		<operation>
 			<search position="replace"><![CDATA[
-	if ((empty($modSettings['disable_visual_verification']) || $modSettings['disable_visual_verification'] != 1) && (empty($_REQUEST['visual_verification_code']) || strtoupper($_REQUEST['visual_verification_code']) !== $_SESSION['visual_verification_code']))
+	if ((empty($modSettings['visual_verification_type']) || $modSettings['visual_verification_type'] != 1) && (empty($_REQUEST['visual_verification_code']) || empty($_SESSION['visual_verification_code']) || strtoupper($_REQUEST['visual_verification_code']) !== $_SESSION['visual_verification_code']))
 ]]></search>
 			<add><![CDATA[
 	if(!empty($modSettings['recaptcha_enable']) || ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
@@ -49,12 +49,12 @@
 			$resp = recaptcha_check_answer($modSettings['recaptcha_private_key'], $_SERVER["REMOTE_ADDR"], $_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]);
 
 			if (!$resp->is_valid)
-				fatal_lang_error('visual_verification_failed', false);
+				fatal_lang_error('error_wrong_verification_code', false);
 		}
 		else
-			fatal_lang_error('visual_verification_failed', false);
+			fatal_lang_error('error_wrong_verification_code', false);
 	}
-	elseif ((empty($modSettings['disable_visual_verification']) || $modSettings['disable_visual_verification'] != 1) && (empty($_REQUEST['visual_verification_code']) || strtoupper($_REQUEST['visual_verification_code']) !== $_SESSION['visual_verification_code']))
+	elseif ((empty($modSettings['visual_verification_type']) || $modSettings['visual_verification_type'] != 1) && (empty($_REQUEST['visual_verification_code']) || empty($_SESSION['visual_verification_code']) || strtoupper($_REQUEST['visual_verification_code']) !== $_SESSION['visual_verification_code']))
 ]]></add>
 		</operation>
 	</file>

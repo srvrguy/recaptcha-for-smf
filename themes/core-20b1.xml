@@ -27,8 +27,8 @@
 			<add><![CDATA[
 							<b>', $txt['visual_verification_label'], ':</b>';
 							if ($context['visual_verification'])
-								echo '<div class="smalltext">', $txt['visual_verification_description'], '</div>';
-		echo '
+							{
+								echo '<div class="smalltext">', $txt['visual_verification_description'], '</div>
 ]]></add>
 		</operation>
 
@@ -36,12 +36,14 @@
 			<search position="after"><![CDATA[
 		if ($context['use_graphic_library'])
 			echo '
-							<img src="', $context['verificiation_image_href'], '" alt="', $txt['visual_verification_description'], '" id="verificiation_image" /><br />';
+							<img src="', $context['verification_image_href'], '" alt="', $txt['visual_verification_description'], '" id="verification_image" /><br />';
 ]]></search>
 			<add><![CDATA[
+		}
 		if ($context['use_recaptcha'])
 		{
 			echo '
+						<td>
 							<script>
 							var RecaptchaOptions = {
 							   theme : \'', empty($modSettings['recaptcha_theme']) ? 'clean' : $modSettings['recaptcha_theme'] , '\',
