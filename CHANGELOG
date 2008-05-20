@@ -1,5 +1,9 @@
 Changelog:
 
+2008-05-20
+ - Version 0.9.5.1
+ - Fixed to support SMF 1.1.5
+
 2008-02-09
  - Version 0.9.5
  - Fixed issue with non-JavaScript reCAPTCHA display
