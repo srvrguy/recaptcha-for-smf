@@ -8,7 +8,10 @@
 			<search position="end"></search>
 			<add><![CDATA[
 //reCAPTCHA for SMF
+$txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
+$txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
 $txt['recaptcha_theme_clean'] = 'Clean';
 $txt['recaptcha_theme_blackglass'] = 'Black Glass';
@@ -27,6 +30,10 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<search position="end"></search>
 			<add><![CDATA[
 //reCAPTCHA for SMF
+$txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
+$txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
 $txt['recaptcha_theme_clean'] = 'Clean';
@@ -46,6 +53,10 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<search position="end"></search>
 			<add><![CDATA[
 //reCAPTCHA for SMF
+$txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
+$txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
 $txt['recaptcha_theme_clean'] = 'Clean';
@@ -65,6 +76,10 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<search position="end"></search>
 			<add><![CDATA[
 //reCAPTCHA for SMF
+$txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
+$txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_enable'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
 $txt['recaptcha_theme_clean'] = 'Clean';

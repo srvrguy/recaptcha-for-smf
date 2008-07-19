@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>motokochan:recaptchaforsmf</id>
+	<name>Visual Verification Options</name>
+
+	<file name="$sourcedir/ManageSettings.php">
+		<operation>
+			<search position="after"><![CDATA[
+			// Clever Thomas, who is looking sheepy now? Not I, the mighty sword swinger did say.
+			array('title', 'setup_verification_questions'),
+			array('title', 'setup_verification_questions_desc', 'class' => 'windowbg'),
+]]></search>
+			<add><![CDATA[
+			// reCAPTCHA
+			array('title', 'recaptcha_configure'),
+			array('title', 'recaptcha_configure_desc', 'class' => 'windowbg'),
+				'recaptcha_enable' => array('check', 'recaptcha_enable', 'subtext' => $txt['recaptcha_enable_desc']),
+				array('text', 'recaptcha_public_key'),
+				array('text', 'recaptcha_private_key'),
+				array('select', 'recaptcha_theme', array('clean' => $txt['recaptcha_theme_clean'],
+									 'blackglass' => $txt['recaptcha_theme_blackglass'],
+									 'red' => $txt['recaptcha_theme_red'],
+									 'white' => $txt['recaptcha_theme_white'], )),
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$sourcedir/Subs-Editor.php">
+		<operation>
+			<search position="replace"><![CDATA[
+		if ($thisVerification['show_visual'] && (empty($_REQUEST[$verificationOptions['id'] . '_vv']['code']) || empty($_SESSION[$verificationOptions['id'] . '_vv']['code']) || strtoupper($_REQUEST[$verificationOptions['id'] . '_vv']['code']) !== $_SESSION[$verificationOptions['id'] . '_vv']['code']))
+]]></search>
+			<add><![CDATA[
+		if(!empty($modSettings['recaptcha_enable']) || ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
+		{
+			if($_REQUEST['recaptcha_response_field']) //Check the input if this exists, if it doesn't, then the user didn't fill it out.
+			{
+				require_once("$sourcedir/recaptchalib.php");
+
+				$resp = recaptcha_check_answer($modSettings['recaptcha_private_key'], $_SERVER['REMOTE_ADDR'], $_REQUEST['recaptcha_challenge_field'], $_REQUEST['recaptcha_response_field']);
+
+				if (!$resp->is_valid)
+					fatal_lang_error('error_wrong_verification_code', false);
+			}
+			else
+				fatal_lang_error('error_wrong_verification_code', false);
+		}
+		elseif ($thisVerification['show_visual'] && (empty($_REQUEST[$verificationOptions['id'] . '_vv']['code']) || empty($_SESSION[$verificationOptions['id'] . '_vv']['code']) || strtoupper($_REQUEST[$verificationOptions['id'] . '_vv']['code']) !== $_SESSION[$verificationOptions['id'] . '_vv']['code']))
+]]></add>
+		</operation>
+	</file>
+
+</modification>
