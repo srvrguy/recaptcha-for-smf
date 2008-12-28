@@ -9,9 +9,9 @@
 		if ($i == 0 && $verify_context['show_visual'])
 ]]></search>
 			<add><![CDATA[
-		if ($i == 0 && ($verify_context['show_visual'] || $modSettings['recaptcha_enable']))
+		if ($i == 0 && ($verify_context['show_visual'] || $modSettings['recaptcha_enabled']))
 		{
-			if ($modSettings['recaptcha_enable'])
+			if ($modSettings['recaptcha_enabled'])
 			{
 				echo '
 				<script>

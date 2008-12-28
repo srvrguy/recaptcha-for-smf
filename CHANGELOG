@@ -2,6 +2,8 @@ Changelog:
 
 2008-12-27
  - Fixed bug causing undefined index errors (BT #19)
+ - Fixed mis-named variables
+ - Small code cleanup for 2.0b3 and newer
 
 2008-09-17
  - Version 0.9.5.3

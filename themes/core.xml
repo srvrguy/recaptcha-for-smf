@@ -85,7 +85,7 @@
 			<add><![CDATA[
 						<tr class="windowbg2">
 							<th width="50%" align="right">
-								<label for="recaptchaEnable_check">', $txt['recaptcha_enable'], '</label>:
+								<label for="recaptchaEnable_check">', $txt['recaptcha_enabled'], '</label>:
 							</th>
 							<td width="50%" align="left">
 								<input type="checkbox" name="recaptchaEnable" id="recaptchaEnable_check" ', !empty($modSettings['recaptcha_enabled']) ? 'checked="checked"' : '', ' class="check" />

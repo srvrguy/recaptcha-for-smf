@@ -40,7 +40,7 @@
 	if ((empty($modSettings['disable_visual_verification']) || $modSettings['disable_visual_verification'] != 1) && (empty($_REQUEST['visual_verification_code']) || strtoupper($_REQUEST['visual_verification_code']) !== $_SESSION['visual_verification_code']))
 ]]></search>
 			<add><![CDATA[
-	if(!empty($modSettings['recaptcha_enable']) || ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
+	if(!empty($modSettings['recaptcha_enabled']) && ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
 	{
 		if($_POST["recaptcha_response_field"]) //Check the input if this exists, if it doesn't, then the user didn't fill it out.
 		{
