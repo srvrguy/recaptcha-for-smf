@@ -1,5 +1,8 @@
 Changelog:
 
+2008-12-27
+ - Fixed bug causing undefined index errors (BT #19)
+
 2008-09-17
  - Version 0.9.5.3
  - Updated to support all 1.1 sub-versions. It doesn't look like there will be

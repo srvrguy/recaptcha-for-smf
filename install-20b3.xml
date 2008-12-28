@@ -32,7 +32,7 @@
 		if ($thisVerification['show_visual'] && (empty($_REQUEST[$verificationOptions['id'] . '_vv']['code']) || empty($_SESSION[$verificationOptions['id'] . '_vv']['code']) || strtoupper($_REQUEST[$verificationOptions['id'] . '_vv']['code']) !== $_SESSION[$verificationOptions['id'] . '_vv']['code']))
 ]]></search>
 			<add><![CDATA[
-		if(!empty($modSettings['recaptcha_enable']) || ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
+		if(!empty(!empty($modSettings['recaptcha_enabled']) && ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
 		{
 			if($_REQUEST['recaptcha_response_field']) //Check the input if this exists, if it doesn't, then the user didn't fill it out.
 			{

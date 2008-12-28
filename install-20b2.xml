@@ -26,7 +26,7 @@
 	}
 ]]></search>
 			<add><![CDATA[
-	$context['use_recaptcha'] = !empty($modSettings['recaptcha_enable']) || ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key']));
+	$context['use_recaptcha'] = !empty($modSettings['recaptcha_enabled']) && ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key']));
 	if ($context['use_recaptcha'])
 	{
 		// Disable the built-in visual verification if we are using reCAPTCHA
