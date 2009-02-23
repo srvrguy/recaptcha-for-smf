@@ -1,5 +1,9 @@
 Changelog:
 
+2009-02-19:
+ - Version 0.9.5.4a
+ - Updated to install directly on 2.0 RC1
+
 2008-12-27
  - Version 0.9.5.4
  - Fixed bug causing undefined index errors (BT #19)
