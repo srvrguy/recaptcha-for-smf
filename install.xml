@@ -42,7 +42,7 @@
 			<add><![CDATA[
 	if(!empty($modSettings['recaptcha_enabled']) && ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
 	{
-		if($_POST["recaptcha_response_field"]) //Check the input if this exists, if it doesn't, then the user didn't fill it out.
+		if(!empty($_POST["recaptcha_response_field"]) && !empty($_POST["recaptcha_challenge_field"])) //Check the input if this exists, if it doesn't, then the user didn't fill it out.
 		{
 			require("$sourcedir/recaptchalib.php");
 

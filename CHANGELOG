@@ -1,5 +1,10 @@
 Changelog:
 
+2009-07-05:
+ - Fixed validation errors on SMF 1.1 series and old tabled Core for early SMF
+   2.0 betas
+ - Hopefully removed all the undefined indexes in the code
+
 2009-02-19:
  - Version 0.9.5.4b
  - Updated to install on 2.0 RC1-1

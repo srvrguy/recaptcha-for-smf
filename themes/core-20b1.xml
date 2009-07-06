@@ -44,7 +44,7 @@
 		{
 			echo '
 						<td>
-							<script>
+							<script type="text/javascript">
 							var RecaptchaOptions = {
 							   theme : \'', empty($modSettings['recaptcha_theme']) ? 'clean' : $modSettings['recaptcha_theme'] , '\',
 							};
@@ -55,12 +55,14 @@
 
 							 <noscript>
 								<iframe src="http://api.recaptcha.net/noscript?k=', $modSettings['recaptcha_public_key'], '"
-									height="300" width="500" frameborder="0"></iframe><br>
+									height="300" width="500" frameborder="0"></iframe><br />
 								<textarea name="recaptcha_challenge_field" rows="3" cols="40">
 								</textarea>
 								<input type="hidden" name="recaptcha_response_field"
-									value="manual_challenge">
-							 </noscript>';
+									value="manual_challenge" />
+							 </noscript>
+						</td>
+					</tr>';
 		}
 		else
 		{
