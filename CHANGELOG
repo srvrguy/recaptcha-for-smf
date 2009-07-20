@@ -1,5 +1,9 @@
 Changelog:
 
+2009-07-19:
+ - Version 0.9.6
+ - Updated to indicate support for 2.0 RC1.2
+
 2009-07-05:
  - Fixed validation errors on SMF 1.1 series and old tabled Core for early SMF
    2.0 betas
