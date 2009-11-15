@@ -3,7 +3,7 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>motokochan:recaptchaforsmf</id>
 	<name>reCAPTCHA for SMF</name>
-	<version>0.9.6</version>
+	<version>0.9.7</version>
 	<type>modification</type>
 	<install for="1.1.*">
 		<readme>README</readme>
@@ -12,24 +12,10 @@
 		<modification>languages/english.xml</modification>
 		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
-	<install for="2.0 Beta 1, 2.0 Beta 1.1">
+	<install for="2.0 RC2">
 		<readme>README</readme>
-		<modification>install-20b1.xml</modification>
-		<modification>themes/core-20b1.xml</modification>
-		<modification>languages/english.xml</modification>
-		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
-	</install>
-	<install for="2.0 Beta 2, 2.0 Beta 2.1">
-		<readme>README</readme>
-		<modification>install-20b2.xml</modification>
-		<modification>themes/core-20b1.xml</modification>
-		<modification>languages/english.xml</modification>
-		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
-	</install>
-	<install for="2.0 Beta 3, 2.0 Beta 3 Public, 2.0 Beta 3.1 Public, 2.0 Beta 4, 2.0 RC1, 2.0 RC1-1, 2.0 RC1.2">
-		<readme>README</readme>
-		<modification>install-20b3.xml</modification>
-		<modification>themes/core-20b3.xml</modification>
+		<modification>install-20.xml</modification>
+		<modification>themes/curve.xml</modification>
 		<modification>languages/english.xml</modification>
 		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
@@ -42,21 +28,9 @@
 		<modification reverse="true">languages/english.xml</modification>
 		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>
-	<uninstall for="2.0 Beta 1, 2.0 Beta 1.1">
-		<modification reverse="true">install-20b1.xml</modification>
-		<modification reverse="true">themes/core-20b1.xml</modification>
-		<modification reverse="true">languages/english.xml</modification>
-		<remove-file name="$sourcedir/recaptchalib.php" />
-	</uninstall>
-	<uninstall for="2.0 Beta 2, 2.0 Beta 2.1">
-		<modification reverse="true">install-20b2.xml</modification>
-		<modification reverse="true">themes/core-20b1.xml</modification>
-		<modification reverse="true">languages/english.xml</modification>
-		<remove-file name="$sourcedir/recaptchalib.php" />
-	</uninstall>
-	<uninstall for="2.0 Beta 3, 2.0 Beta 3 Public, 2.0 Beta 3.1 Public, 2.0 Beta 4, 2.0 RC1, 2.0 RC1-1, 2.0 RC1.2">
-		<modification reverse="true">install-20b3.xml</modification>
-		<modification reverse="true">themes/core-20b3.xml</modification>
+	<uninstall for="2.0 RC2">
+		<modification reverse="true">install-20.xml</modification>
+		<modification reverse="true">themes/curve.xml</modification>
 		<modification reverse="true">languages/english.xml</modification>
 		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>

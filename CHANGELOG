@@ -1,5 +1,10 @@
 Changelog:
 
+2009-11-14:
+ - Version 0.9.7
+ - Updated to work with 2.0 RC2 and Curve
+ - Dropped support for 2.0 pre-release versions older than RC2
+
 2009-07-19:
  - Version 0.9.6
  - Updated to indicate support for 2.0 RC1.2

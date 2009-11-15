@@ -9,7 +9,6 @@
 			<search position="after"><![CDATA[
 			// Clever Thomas, who is looking sheepy now? Not I, the mighty sword swinger did say.
 			array('title', 'setup_verification_questions'),
-			array('title', 'setup_verification_questions_desc', 'class' => 'windowbg'),
 ]]></search>
 			<add><![CDATA[
 			// reCAPTCHA
