@@ -13,7 +13,7 @@
 			<add><![CDATA[
 			// reCAPTCHA
 			array('title', 'recaptcha_configure'),
-			array('title', 'recaptcha_configure_desc', 'class' => 'windowbg'),
+			array('desc', 'recaptcha_configure_desc', 'class' => 'windowbg'),
 				array('check', 'recaptcha_enabled', 'subtext' => $txt['recaptcha_enable_desc']),
 				array('text', 'recaptcha_public_key'),
 				array('text', 'recaptcha_private_key'),

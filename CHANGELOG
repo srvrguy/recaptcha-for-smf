@@ -1,5 +1,10 @@
 Changelog:
 
+2010-03-13:
+ - Version 0.9.8
+ - Updated to work with 2.0 RC3
+ - Fixed display issue with 2.0 RC3
+
 2009-11-14:
  - Version 0.9.7
  - Updated to work with 2.0 RC2 and Curve
