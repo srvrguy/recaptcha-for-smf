@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Komodo Project File - DO NOT EDIT -->
-<project id="a907aa3d-5168-420b-ba69-e3585b1b2d4a" kpf_version="4" name="smf-recaptcha.kpf">
+<project id="a907aa3d-5168-420b-ba69-e3585b1b2d4a" kpf_version="5" name="smf-recaptcha.komodoproject">
 <preference-set idref="a907aa3d-5168-420b-ba69-e3585b1b2d4a">
   <boolean id="import_live">1</boolean>
 </preference-set>
