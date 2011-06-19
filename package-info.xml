@@ -3,7 +3,7 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>motokochan:recaptchaforsmf</id>
 	<name>reCAPTCHA for SMF</name>
-	<version>0.9.8</version>
+	<version>0.9.8a</version>
 	<type>modification</type>
 	<install for="1.1.*">
 		<readme>README</readme>
@@ -12,7 +12,7 @@
 		<modification>languages/english.xml</modification>
 		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
-	<install for="2.0 RC3">
+	<install for="2.0*">
 		<readme>README</readme>
 		<modification>install-20.xml</modification>
 		<modification>themes/curve.xml</modification>
@@ -28,7 +28,7 @@
 		<modification reverse="true">languages/english.xml</modification>
 		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>
-	<uninstall for="2.0 RC3">
+	<uninstall for="2.0*">
 		<modification reverse="true">install-20.xml</modification>
 		<modification reverse="true">themes/curve.xml</modification>
 		<modification reverse="true">languages/english.xml</modification>

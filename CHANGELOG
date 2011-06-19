@@ -1,5 +1,10 @@
 Changelog:
 
+2011-06-18:
+ - Version 0.9.8a
+ - Updated reCAPTCHA library
+ - Marked as compatible with SMF 2.0
+
 2010-03-13:
  - Version 0.9.8
  - Updated to work with 2.0 RC3

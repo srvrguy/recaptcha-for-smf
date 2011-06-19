@@ -36,8 +36,8 @@ the settings to register for a key pair.
 
 License
 -------
-This code is licensed under the terms of the Simple Machines License. SMF code
-used in this mod is copyright Simple Machines LLC. All original code is
+This code is licensed under the terms of the original Simple Machines License.
+SMF code used in this mod is copyright Simple Machines. All original code is
 copyright Michael Johnson.
 
 The reCAPTCHA PHP library is licensed under the MIT license.
@@ -45,8 +45,7 @@ The reCAPTCHA PHP library is licensed under the MIT license.
 
 Acknowledgements
 ----------------
-"SMF" and "Simple Machines" are trademarks of Simple Machines LLC. "reCAPTCHA"
-and "CAPTCHA" are trademarks of Carnegie Mellon University.
+"SMF" and "Simple Machines" are trademarks of Simple Machines.
 
 
 Version History
@@ -54,4 +53,4 @@ Version History
 See CHANGELOG
 
 
-Doc Revision 20081227
+Doc Revision 20110618
