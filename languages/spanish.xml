@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>motokochan:recaptchaforsmf</id>
+
+	<file name="$languagedir/Modifications.spanish.php" error="skip">
+		<operation>
+			<search position="end"></search>
+			<add><![CDATA[
+//reCAPTCHA for SMF
+$txt['recaptcha_configure'] = 'Sistema de Verificaci&oacute;n reCAPTCHA';
+$txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA. &iquest;No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create">Obt&eacute;n tu clave reCAPTCHA aqu&iacute;</a>.';
+$txt['recaptcha_enabled'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA';
+$txt['recaptcha_enable_desc'] = '(Esto reemplazar&aacute; el sistema de verificaci&oacute;n visual interno por reCAPTCHA)';
+$txt['recaptcha_theme'] = 'Visualiaci&oacute;n de reCAPTCHA';
+$txt['recaptcha_theme_clean'] = 'Limpio';
+$txt['recaptcha_theme_blackglass'] = 'Vidrio Negro';
+$txt['recaptcha_theme_red'] = 'Rojo';
+$txt['recaptcha_theme_white'] = 'Blanco';
+$txt['recaptcha_public_key'] = 'Clave P&uacute;blica reCAPTCHA';
+$txt['recaptcha_private_key'] = 'Clave Privada reCAPTCHA';
+$txt['recaptcha_no_key_question'] = '&iquest;No tienes una clave de reCAPTCHA?';
+$txt['recaptcha_get_key'] = 'Obt&eacute;n tu clave de reCAPTCHA aqu&iacute;.';
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.spanish-utf8.php" error="skip">
+		<operation>
+			<search position="end"></search>
+			<add><![CDATA[
+//reCAPTCHA for SMF
+$txt['recaptcha_configure'] = 'Sistema de Verificación reCAPTCHA';
+$txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificación reCAPTCHA. ¿No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create">Obtén tu clave reCAPTCHA aquí</a>.';
+$txt['recaptcha_enabled'] = 'Usar el Sistema de Verificación reCAPTCHA';
+$txt['recaptcha_enable_desc'] = '(Esto reemplazará el sistema de verificación visual interno por reCAPTCHA)';
+$txt['recaptcha_theme'] = 'Visualiación de reCAPTCHA';
+$txt['recaptcha_theme_clean'] = 'Limpio';
+$txt['recaptcha_theme_blackglass'] = 'Vidrio Negro';
+$txt['recaptcha_theme_red'] = 'Rojo';
+$txt['recaptcha_theme_white'] = 'Blanco';
+$txt['recaptcha_public_key'] = 'Clave Pública reCAPTCHA';
+$txt['recaptcha_private_key'] = 'Clave Privada reCAPTCHA';
+$txt['recaptcha_no_key_question'] = '¿No tienes una clave de reCAPTCHA?';
+$txt['recaptcha_get_key'] = 'Obtén tu clave de reCAPTCHA aquí.';
+]]></add>
+		</operation>
+	</file>
+
+</modification>
