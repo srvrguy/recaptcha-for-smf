@@ -9,7 +9,7 @@
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
@@ -31,7 +31,7 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
@@ -53,7 +53,7 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
@@ -75,7 +75,7 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
