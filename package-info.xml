@@ -11,6 +11,7 @@
 		<modification>themes/core.xml</modification>
 		<modification>languages/english.xml</modification>
 		<modification>languages/spanish.xml</modification>
+		<modification>languages/german.xml</modification>
 		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
 	<install for="2.0*">
@@ -19,6 +20,7 @@
 		<modification>themes/curve.xml</modification>
 		<modification>languages/english.xml</modification>
 		<modification>languages/spanish.xml</modification>
+		<modification>languages/german.xml</modification>
 		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
 	<install>
@@ -29,6 +31,7 @@
 		<modification reverse="true">themes/core.xml</modification>
 		<modification reverse="true">languages/english.xml</modification>
 		<modification reverse="true">languages/spanish.xml</modification>
+		<modification reverse="true">languages/german.xml</modification>
 		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>
 	<uninstall for="2.0*">
@@ -36,6 +39,7 @@
 		<modification reverse="true">themes/curve.xml</modification>
 		<modification reverse="true">languages/english.xml</modification>
 		<modification reverse="true">languages/spanish.xml</modification>
+		<modification reverse="true">languages/german.xml</modification>
 		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>
 </package-info>
