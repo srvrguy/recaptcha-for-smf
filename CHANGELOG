@@ -4,6 +4,7 @@ Changelog:
  - Updated key creation URL
  - Added Spanish language
  - Added German language
+ - Fixed styles other than "Clean" displaying with left alignment
 
 
 2011-06-18:

@@ -54,9 +54,10 @@
 			<add><![CDATA[
 
 /* Make the reCAPTCHA dialog centered to match the positioning of the built-in verification */
-.centertext #recaptcha_table
+#recaptcha_area, #recaptcha_table
 {
-	margin: 0 auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 ]]></add>
 		</operation>
