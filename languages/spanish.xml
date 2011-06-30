@@ -8,6 +8,7 @@
 			<search position="end"></search>
 			<add><![CDATA[
 //reCAPTCHA for SMF
+//Spanish translation by OutofOrder
 $txt['recaptcha_configure'] = 'Sistema de Verificaci&oacute;n reCAPTCHA';
 $txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA. &iquest;No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create">Obt&eacute;n tu clave reCAPTCHA aqu&iacute;</a>.';
 $txt['recaptcha_enabled'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA';
@@ -30,6 +31,7 @@ $txt['recaptcha_get_key'] = 'Obt&eacute;n tu clave de reCAPTCHA aqu&iacute;.';
 			<search position="end"></search>
 			<add><![CDATA[
 //reCAPTCHA for SMF
+//Spanish translation by OutofOrder
 $txt['recaptcha_configure'] = 'Sistema de Verificación reCAPTCHA';
 $txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificación reCAPTCHA. ¿No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create">Obtén tu clave reCAPTCHA aquí</a>.';
 $txt['recaptcha_enabled'] = 'Usar el Sistema de Verificación reCAPTCHA';
