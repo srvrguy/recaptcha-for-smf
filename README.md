@@ -1,12 +1,11 @@
 reCAPTCHA for SMF
-by Motoko-chan
-
+=================
 
 About
 -----
-This modification allows you to use the reCAPTCHA verification system
-(http://recaptcha.net/) instead of the built-in Visual Verification system. It
-supports SMF 1.1.2 and newer.
+This modification allows you to use the [reCAPTCHA verification system]
+(http://www.google.com/recaptcha) instead of the built-in Visual Verification
+system. It supports SMF 1.1.2 and newer.
 
 Portions of the code use the PHP reCAPTCHA API.
 
@@ -24,10 +23,10 @@ How to Use
 ----------
 You can enable reCAPTCHA by going to:
 
-SMF 1.1:
+**SMF 1.1:**
 Admin -> Registration -> Settings
 
-SMF 2.0:
+**SMF 2.0:**
 Admin -> Configuration -> Security and Moderation -> Anti-Spam
 
 A set of keys are required for operation of reCAPTCHA. A link is provided in
@@ -36,9 +35,9 @@ the settings to register for a key pair.
 
 License
 -------
-This code is licensed under the terms of the original Simple Machines License.
-SMF code used in this mod is copyright Simple Machines. All original code is
-copyright Michael Johnson.
+This code is licensed under the terms of the Modified BSD License. SMF code
+used in this mod is copyright Simple Machines. All original code is copyright
+Michael Johnson.
 
 The reCAPTCHA PHP library is licensed under the MIT license.
 
@@ -53,4 +52,4 @@ Version History
 See CHANGELOG
 
 
-Doc Revision 20110618
+Doc Revision 20140126

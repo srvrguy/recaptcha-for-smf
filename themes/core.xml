@@ -48,11 +48,11 @@
 							};
 							</script>
 							<script type="text/javascript"
-								src="http://api.recaptcha.net/challenge?k=', $modSettings['recaptcha_public_key'], '">
+								src="https://www.google.com/recaptcha/api/challenge?k=', $modSettings['recaptcha_public_key'], '">
 							 </script>
 
 							 <noscript>
-								<iframe src="http://api.recaptcha.net/noscript?k=', $modSettings['recaptcha_public_key'], '"
+								<iframe src="https://www.google.com/recaptcha/api/noscript?k=', $modSettings['recaptcha_public_key'], '"
 									height="300" width="500" frameborder="0"></iframe><br />
 								<textarea name="recaptcha_challenge_field" rows="3" cols="40">
 								</textarea>
@@ -120,7 +120,7 @@
 							</td>
 						</tr><tr class="windowbg2" valign="top">
 							<td colspan = "2" align="center">',
-								$txt['recaptcha_no_key_question'],' <a href="http://recaptcha.net/api/getkey?app=recaptcha_for_smf&amp;domain=', $_SERVER['SERVER_NAME'], '">', $txt['recaptcha_get_key'], '</a>
+								$txt['recaptcha_no_key_question'],' <a href="https://www.google.com/recaptcha/admin/create">', $txt['recaptcha_get_key'], '</a>
 							</td>
 						</tr><tr class="windowbg2">
 							<td width="100%" colspan="2" align="center">

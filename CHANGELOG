@@ -1,11 +1,16 @@
 Changelog:
 
+2014-01-26:
+ - Version 0.9.9
+ - Updated to use google.com URLs
+ - Using the SSL reCAPTCHA URLs by default to fix mixed-mode issues on SSL
+   websites.
+
 2011-06-30:
  - Updated key creation URL
  - Added Spanish language
  - Added German language
  - Fixed styles other than "Clean" displaying with left alignment
-
 
 2011-06-18:
  - Version 0.9.8a
