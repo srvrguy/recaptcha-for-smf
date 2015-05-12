@@ -1,5 +1,9 @@
 Changelog:
 
+2015-05-12:
+ - Version 1.0.0
+ - Switched to new "No CAPTCHA reCAPTCHA" (see http://goo.gl/eX85TW)
+
 2014-01-26:
  - Version 0.9.9
  - Updated to use google.com URLs

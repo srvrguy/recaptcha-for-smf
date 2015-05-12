@@ -14,23 +14,8 @@
 			if ($modSettings['recaptcha_enabled'])
 			{
 				echo '
-				<script type="text/javascript">
-				var RecaptchaOptions = {
-				   theme : \'', empty($modSettings['recaptcha_theme']) ? 'clean' : $modSettings['recaptcha_theme'] , '\',
-				};
-				</script>
-				<script type="text/javascript"
-					src="https://www.google.com/recaptcha/api/challenge?k=', $modSettings['recaptcha_public_key'], '">
-				 </script>
-
-				 <noscript>
-					<iframe src="https://www.google.com/recaptcha/api/noscript?k=', $modSettings['recaptcha_public_key'], '"
-						height="300" width="500" frameborder="0"></iframe><br />
-					<textarea name="recaptcha_challenge_field" rows="3" cols="40">
-					</textarea>
-					<input type="hidden" name="recaptcha_response_field"
-						value="manual_challenge" />
-				 </noscript>';
+				<div class="g-recaptcha" data-sitekey="' . $modSettings['recaptcha_public_key'] . '" data-theme="' . $modSettings['recaptcha_theme'] . '"></div>
+				<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>';
 			}
 			else
 ]]></add>
@@ -54,10 +39,9 @@
 			<add><![CDATA[
 
 /* Make the reCAPTCHA dialog centered to match the positioning of the built-in verification */
-#recaptcha_area, #recaptcha_table
+.g-recaptcha div div
 {
-	margin-left: auto !important;
-	margin-right: auto !important;
+	margin: auto;
 }
 ]]></add>
 		</operation>

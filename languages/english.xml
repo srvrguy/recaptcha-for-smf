@@ -9,14 +9,12 @@
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
-$txt['recaptcha_theme_clean'] = 'Clean';
-$txt['recaptcha_theme_blackglass'] = 'Black Glass';
-$txt['recaptcha_theme_red'] = 'Red';
-$txt['recaptcha_theme_white'] = 'White';
+$txt['recaptcha_theme_light'] = 'Light';
+$txt['recaptcha_theme_dark'] = 'Dark';
 $txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
 $txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
 $txt['recaptcha_no_key_question'] = 'Don\'t have a key for reCAPTCHA?';
@@ -31,14 +29,12 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
-$txt['recaptcha_theme_clean'] = 'Clean';
-$txt['recaptcha_theme_blackglass'] = 'Black Glass';
-$txt['recaptcha_theme_red'] = 'Red';
-$txt['recaptcha_theme_white'] = 'White';
+$txt['recaptcha_theme_light'] = 'Light';
+$txt['recaptcha_theme_dark'] = 'Dark';
 $txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
 $txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
 $txt['recaptcha_no_key_question'] = 'Don\'t have a key for reCAPTCHA?';
@@ -53,14 +49,12 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
-$txt['recaptcha_theme_clean'] = 'Clean';
-$txt['recaptcha_theme_blackglass'] = 'Black Glass';
-$txt['recaptcha_theme_red'] = 'Red';
-$txt['recaptcha_theme_white'] = 'White';
+$txt['recaptcha_theme_light'] = 'Light';
+$txt['recaptcha_theme_dark'] = 'Dark';
 $txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
 $txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
 $txt['recaptcha_no_key_question'] = 'Don\'t have a key for reCAPTCHA?';
@@ -75,14 +69,12 @@ $txt['recaptcha_get_key'] = 'Get your reCAPTCHA key here.';
 			<add><![CDATA[
 //reCAPTCHA for SMF
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create"> Get your reCAPTCHA key here</a>.';
+$txt['recaptcha_configure_desc'] = 'Use the reCAPTCHA Verification System. Don\'t have a key for reCAPTCHA? <a href="https://www.google.com/recaptcha/admin"> Get your reCAPTCHA key here</a>.';
 $txt['recaptcha_enabled'] = 'Use reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(This replaces the built-in visual verification with reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Theme';
-$txt['recaptcha_theme_clean'] = 'Clean';
-$txt['recaptcha_theme_blackglass'] = 'Black Glass';
-$txt['recaptcha_theme_red'] = 'Red';
-$txt['recaptcha_theme_white'] = 'White';
+$txt['recaptcha_theme_light'] = 'Light';
+$txt['recaptcha_theme_dark'] = 'Dark';
 $txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
 $txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
 $txt['recaptcha_no_key_question'] = 'Don\'t have a key for reCAPTCHA?';

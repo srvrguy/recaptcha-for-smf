@@ -10,14 +10,12 @@
 //reCAPTCHA for SMF
 //Spanish translation by OutofOrder
 $txt['recaptcha_configure'] = 'Sistema de Verificaci&oacute;n reCAPTCHA';
-$txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA. &iquest;No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create">Obt&eacute;n tu clave reCAPTCHA aqu&iacute;</a>.';
+$txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA. &iquest;No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin">Obt&eacute;n tu clave reCAPTCHA aqu&iacute;</a>.';
 $txt['recaptcha_enabled'] = 'Usar el Sistema de Verificaci&oacute;n reCAPTCHA';
 $txt['recaptcha_enable_desc'] = '(Esto reemplazar&aacute; el sistema de verificaci&oacute;n visual interno por reCAPTCHA)';
 $txt['recaptcha_theme'] = 'Visualiaci&oacute;n de reCAPTCHA';
-$txt['recaptcha_theme_clean'] = 'Limpio';
-$txt['recaptcha_theme_blackglass'] = 'Vidrio Negro';
-$txt['recaptcha_theme_red'] = 'Rojo';
-$txt['recaptcha_theme_white'] = 'Blanco';
+$txt['recaptcha_theme_light'] = 'Luz';
+$txt['recaptcha_theme_dark'] = 'Oscuro';
 $txt['recaptcha_public_key'] = 'Clave P&uacute;blica reCAPTCHA';
 $txt['recaptcha_private_key'] = 'Clave Privada reCAPTCHA';
 $txt['recaptcha_no_key_question'] = '&iquest;No tienes una clave de reCAPTCHA?';
@@ -33,14 +31,12 @@ $txt['recaptcha_get_key'] = 'Obt&eacute;n tu clave de reCAPTCHA aqu&iacute;.';
 //reCAPTCHA for SMF
 //Spanish translation by OutofOrder
 $txt['recaptcha_configure'] = 'Sistema de Verificación reCAPTCHA';
-$txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificación reCAPTCHA. ¿No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin/create">Obtén tu clave reCAPTCHA aquí</a>.';
+$txt['recaptcha_configure_desc'] = 'Usar el Sistema de Verificación reCAPTCHA. ¿No tienes una clave para usar reCAPTCHA? <a href="https://www.google.com/recaptcha/admin">Obtén tu clave reCAPTCHA aquí</a>.';
 $txt['recaptcha_enabled'] = 'Usar el Sistema de Verificación reCAPTCHA';
 $txt['recaptcha_enable_desc'] = '(Esto reemplazará el sistema de verificación visual interno por reCAPTCHA)';
 $txt['recaptcha_theme'] = 'Visualiación de reCAPTCHA';
-$txt['recaptcha_theme_clean'] = 'Limpio';
-$txt['recaptcha_theme_blackglass'] = 'Vidrio Negro';
-$txt['recaptcha_theme_red'] = 'Rojo';
-$txt['recaptcha_theme_white'] = 'Blanco';
+$txt['recaptcha_theme_light'] = 'Luz';
+$txt['recaptcha_theme_dark'] = 'Oscuro';
 $txt['recaptcha_public_key'] = 'Clave Pública reCAPTCHA';
 $txt['recaptcha_private_key'] = 'Clave Privada reCAPTCHA';
 $txt['recaptcha_no_key_question'] = '¿No tienes una clave de reCAPTCHA?';

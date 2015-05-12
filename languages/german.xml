@@ -10,14 +10,12 @@
 //reCAPTCHA for SMF
 //German Translation by JeeK
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Verwende das reCAPTCHA Verification System. Noch keine Schl&uuml;ssel (Keys) f&uuml;r reCAPTCHAi beantragt? <a href="https://www.google.com/recaptcha/admin/create"> Die reCAPTCHA Schl&uuml;sseli (Keys) hier holen! (Google Account notwendig!)</a>.';
+$txt['recaptcha_configure_desc'] = 'Verwende das reCAPTCHA Verification System. Noch keine Schl&uuml;ssel (Keys) f&uuml;r reCAPTCHAi beantragt? <a href="https://www.google.com/recaptcha/admin"> Die reCAPTCHA Schl&uuml;sseli (Keys) hier holen! (Google Account notwendig!)</a>.';
 $txt['recaptcha_enabled'] = 'Verwende reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(Dieses ersetzt die eingebaute visuelle Verifikation durch reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Themen';
-$txt['recaptcha_theme_clean'] = 'Klar';
-$txt['recaptcha_theme_blackglass'] = 'Schwarzes Glas';
-$txt['recaptcha_theme_red'] = 'Rot';
-$txt['recaptcha_theme_white'] = 'Weiss';
+$txt['recaptcha_theme_light'] = 'Leicht';
+$txt['recaptcha_theme_dark'] = 'Dunkel';
 $txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
 $txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
 $txt['recaptcha_no_key_question'] = 'Noch keinen Schl&uuml;ssel (Keys) f&uuml;r reCAPTCHA beantragt?';
@@ -33,14 +31,12 @@ $txt['recaptcha_get_key'] = 'Den reCAPTCHA Schl&uuml;ssel hier holen.';
 //reCAPTCHA for SMF
 //German Translation by JeeK
 $txt['recaptcha_configure'] = 'reCAPTCHA Verification System';
-$txt['recaptcha_configure_desc'] = 'Verwende das reCAPTCHA Verification System. Noch keine Schlüssel (Keys) für reCAPTCHAi beantragt? <a href="https://www.google.com/recaptcha/admin/create"> Die reCAPTCHA Schlüsseli (Keys) hier holen! (Google Account notwendig!)</a>.';
+$txt['recaptcha_configure_desc'] = 'Verwende das reCAPTCHA Verification System. Noch keine Schlüssel (Keys) für reCAPTCHAi beantragt? <a href="https://www.google.com/recaptcha/admin"> Die reCAPTCHA Schlüsseli (Keys) hier holen! (Google Account notwendig!)</a>.';
 $txt['recaptcha_enabled'] = 'Verwende reCAPTCHA Verification System';
 $txt['recaptcha_enable_desc'] = '(Dieses ersetzt die eingebaute visuelle Verifikation durch reCAPTCHA)';
 $txt['recaptcha_theme'] = 'reCAPTCHA Themen';
-$txt['recaptcha_theme_clean'] = 'Klar';
-$txt['recaptcha_theme_blackglass'] = 'Schwarzes Glas';
-$txt['recaptcha_theme_red'] = 'Rot';
-$txt['recaptcha_theme_white'] = 'Weiss';
+$txt['recaptcha_theme_light'] = 'Leicht';
+$txt['recaptcha_theme_dark'] = 'Dunkel';
 $txt['recaptcha_public_key'] = 'reCAPTCHA Public Key';
 $txt['recaptcha_private_key'] = 'reCAPTCHA Private Key';
 $txt['recaptcha_no_key_question'] = 'Noch keinen Schlüssel (Keys) für reCAPTCHA beantragt?';

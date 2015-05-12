@@ -5,7 +5,7 @@ About
 -----
 This modification allows you to use the [reCAPTCHA verification system]
 (http://www.google.com/recaptcha) instead of the built-in Visual Verification
-system. It supports SMF 2.0.
+system. It supports the SMF 2.0 series.
 
 Portions of the code use the PHP reCAPTCHA API.
 
