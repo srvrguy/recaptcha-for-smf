@@ -5,7 +5,7 @@ About
 -----
 This modification allows you to use the [reCAPTCHA verification system]
 (http://www.google.com/recaptcha) instead of the built-in Visual Verification
-system. It supports SMF 1.1.2 and newer.
+system. It supports SMF 2.0.
 
 Portions of the code use the PHP reCAPTCHA API.
 
@@ -23,10 +23,6 @@ How to Use
 ----------
 You can enable reCAPTCHA by going to:
 
-**SMF 1.1:**
-Admin -> Registration -> Settings
-
-**SMF 2.0:**
 Admin -> Configuration -> Security and Moderation -> Anti-Spam
 
 A set of keys are required for operation of reCAPTCHA. A link is provided in
@@ -52,4 +48,4 @@ Version History
 See CHANGELOG
 
 
-Doc Revision 20140126
+Doc Revision 20150512
