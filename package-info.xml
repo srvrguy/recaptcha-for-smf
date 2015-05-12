@@ -7,7 +7,7 @@
 	<type>modification</type>
 	<install for="2.0*">
 		<readme>README.md</readme>
-		<modification>install-20.xml</modification>
+		<modification>install.xml</modification>
 		<modification>themes/curve.xml</modification>
 		<modification>languages/english.xml</modification>
 		<modification>languages/spanish.xml</modification>
@@ -18,7 +18,7 @@
 		<readme type="inline">This package doesn't appear to support your SMF version.</readme>
 	</install>
 	<uninstall for="2.0*">
-		<modification reverse="true">install-20.xml</modification>
+		<modification reverse="true">install.xml</modification>
 		<modification reverse="true">themes/curve.xml</modification>
 		<modification reverse="true">languages/english.xml</modification>
 		<modification reverse="true">languages/spanish.xml</modification>
