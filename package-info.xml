@@ -12,6 +12,8 @@
 		<modification>languages/english.xml</modification>
 		<modification>languages/spanish.xml</modification>
 		<modification>languages/german.xml</modification>
+		<modification>languages/russian.xml</modification>
+		<modification>languages/russian-utf8.xml</modification>
 		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
 	<install>
@@ -23,6 +25,8 @@
 		<modification reverse="true">languages/english.xml</modification>
 		<modification reverse="true">languages/spanish.xml</modification>
 		<modification reverse="true">languages/german.xml</modification>
+		<modification reverse="true">languages/russian.xml</modification>
+		<modification reverse="true">languages/russian-utf8.xml</modification>
 		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>
 </package-info>
