@@ -39,7 +39,7 @@
 			<add><![CDATA[
 
 /* Make the reCAPTCHA dialog centered to match the positioning of the built-in verification */
-.g-recaptcha div div
+.g-recaptcha div
 {
 	margin: auto;
 }
