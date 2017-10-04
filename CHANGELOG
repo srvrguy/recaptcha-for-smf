@@ -1,5 +1,14 @@
 Changelog:
 
+2017-04-10
+-  Version 1.0.1
+ - Added Russian language
+ - Fix css to make reCAPTCHA dialog centered
+
+2015-05-12:
+ - Version 1.0.0
+ - Switched to new "No CAPTCHA reCAPTCHA" (see http://goo.gl/eX85TW)
+
 2015-05-12:
  - Version 1.0.0
  - Switched to new "No CAPTCHA reCAPTCHA" (see http://goo.gl/eX85TW)
