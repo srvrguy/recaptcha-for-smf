@@ -3,26 +3,26 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>motokochan:recaptchaforsmf</id>
 	<name>reCAPTCHA for SMF</name>
-	<version>1.0.0</version>
+	<version>2.0.0</version>
 	<type>modification</type>
 	<install for="2.0*">
 		<readme>README.md</readme>
+		<code>install.php</code>
+		<require-dir name="files/recaptcha" destination="$sourcedir" />
+		<require-file name="files/css/recaptcha.css" destination="$themedir/css" />
+		<require-file name="files/language/Recaptcha.english.php" destination="$languagedir" />
 		<modification>install.xml</modification>
 		<modification>themes/curve.xml</modification>
-		<modification>languages/english.xml</modification>
-		<modification>languages/spanish.xml</modification>
-		<modification>languages/german.xml</modification>
-		<require-file name="files/recaptchalib.php" destination="$sourcedir" />
 	</install>
 	<install>
 		<readme type="inline">This package doesn't appear to support your SMF version.</readme>
 	</install>
 	<uninstall for="2.0*">
+		<code>uninstall.php</code>
+		<remove-dir name="$sourcedir/recaptcha" />
+		<remove-file name="$themedir/css/recaptcha.css" />
+		<remove-file name="$languagedir/Recaptcha.english.php" />
 		<modification reverse="true">install.xml</modification>
 		<modification reverse="true">themes/curve.xml</modification>
-		<modification reverse="true">languages/english.xml</modification>
-		<modification reverse="true">languages/spanish.xml</modification>
-		<modification reverse="true">languages/german.xml</modification>
-		<remove-file name="$sourcedir/recaptchalib.php" />
 	</uninstall>
 </package-info>

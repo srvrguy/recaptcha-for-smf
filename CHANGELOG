@@ -1,5 +1,12 @@
 Changelog:
 
+2018-08-03
+ - Version 2.0.0
+ - Major rewrite of code
+ - Updated to newer reCAPTCHA PHP client library (Uses reCAPTCHA v2 by default)
+ - Switched to hooks where possible
+ - Removed all non-English languages
+
 2015-05-12:
  - Version 1.0.0
  - Switched to new "No CAPTCHA reCAPTCHA" (see http://goo.gl/eX85TW)

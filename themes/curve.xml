@@ -5,44 +5,36 @@
 
 	<file name="$themedir/GenericControls.template.php">
 		<operation>
+			<search position="before"><![CDATA[
+	// How many items are there to display in total.
+	$total_items = count($verify_context['questions']) + ($verify_context['show_visual'] ? 1 : 0);
+]]></search>
+			<add><![CDATA[
+	$total_items += ($verify_context['use_recaptcha'] ? 1 : 0);
+]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			echo '
+			<div id="verification_control_', $i, '" class="verification_control">';
+
+]]></search>
+			<add><![CDATA[
+        if ($i == 0 && $verify_context['use_recaptcha'])
+        {
+            // Render the reCAPTCHA Widget. Also, add a hidden form element so we pass back the "*_vv" values expected
+            //by some of the CAPTCHA-checking code in SMF to trigger the verification routines.
+            echo '<div class="g-recaptcha" data-sitekey="', $modSettings['recaptcha_public_key'], '" data-theme="', $modSettings['recaptcha_theme'] ,'"></div>
+              <input type="hidden" name="', $verify_id, '_vv[recaptcha]" value="true">';
+        }
+]]></add>
+		</operation>
+		<operation>
 			<search position="replace"><![CDATA[
 		if ($i == 0 && $verify_context['show_visual'])
 ]]></search>
 			<add><![CDATA[
-		if ($i == 0 && ($verify_context['show_visual'] || $modSettings['recaptcha_enabled']))
-		{
-			if ($modSettings['recaptcha_enabled'])
-			{
-				echo '
-				<div class="g-recaptcha" data-sitekey="' . $modSettings['recaptcha_public_key'] . '" data-theme="' . $modSettings['recaptcha_theme'] . '"></div>
-				<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>';
-			}
-			else
-]]></add>
-		</operation>
-
-		<operation>
-			<search position="before"><![CDATA[
-					<input type="text" name="', $verify_id, '_vv[code]" value="', !empty($verify_context['text_value']) ? $verify_context['text_value'] : '', '" size="30" tabindex="', $context['tabindex']++, '" class="input_text" />
-				</div>';
-]]></search>
-			<add><![CDATA[
-			}
-]]></add>
-		</operation>
-
-	</file>
-
-	<file name="$themedir/css/index.css">
-		<operation>
-			<search position="end"></search>
-			<add><![CDATA[
-
-/* Make the reCAPTCHA dialog centered to match the positioning of the built-in verification */
-.g-recaptcha div div
-{
-	margin: auto;
-}
+		elseif ($i == 0 && $verify_context['show_visual'])
 ]]></add>
 		</operation>
 	</file>

@@ -6,15 +6,21 @@
 
 	<file name="$sourcedir/ManageSettings.php">
 		<operation>
+			<search position="before"><![CDATA[
+			array('desc', 'configure_verification_means_desc'),
+]]></search>
+			<add><![CDATA[
+				array('check', 'recaptcha_enabled', 'subtext' => $txt['recaptcha_enable_desc']),
+]]></add>
+		</operation>
+		<operation>
 			<search position="after"><![CDATA[
 			// Clever Thomas, who is looking sheepy now? Not I, the mighty sword swinger did say.
-			array('title', 'setup_verification_questions'),
 ]]></search>
 			<add><![CDATA[
 			// reCAPTCHA
 			array('title', 'recaptcha_configure'),
 			array('desc', 'recaptcha_configure_desc', 'class' => 'windowbg'),
-				array('check', 'recaptcha_enabled', 'subtext' => $txt['recaptcha_enable_desc']),
 				array('text', 'recaptcha_public_key'),
 				array('text', 'recaptcha_private_key'),
 				array('select', 'recaptcha_theme', array('light' => $txt['recaptcha_theme_light'],
@@ -25,31 +31,46 @@
 
 	<file name="$sourcedir/Subs-Editor.php">
 		<operation>
-			<search position="replace"><![CDATA[
-		if ($thisVerification['show_visual'] && (empty($_REQUEST[$verificationOptions['id'] . '_vv']['code']) || empty($_SESSION[$verificationOptions['id'] . '_vv']['code']) || strtoupper($_REQUEST[$verificationOptions['id'] . '_vv']['code']) !== $_SESSION[$verificationOptions['id'] . '_vv']['code']))
+			<search position="after"><![CDATA[
+		);
+	$thisVerification = &$context['controls']['verification'][$verificationOptions['id']];
 ]]></search>
 			<add><![CDATA[
-		if(!empty($modSettings['recaptcha_enabled']) && ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
-		{
+            'use_recaptcha' => !empty($modSettings['recaptcha_enabled']),
+]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+	if (empty($thisVerification['show_visual']) && empty($thisVerification['number_questions']))
+]]></search>
+			<add><![CDATA[
+	if (empty($thisVerification['show_visual']) && empty($thisVerification['number_questions']) && empty($thisVerification['use_recaptcha']))
+]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+		if ($thisVerification['number_questions'] && (!isset($_SESSION[$verificationOptions['id'] . '_vv']['q']) || !isset($_REQUEST[$verificationOptions['id'] . '_vv']['q'])))
+			fatal_lang_error('no_access', false);
+]]></search>
+			<add><![CDATA[
 
-			require_once("$sourcedir/recaptchalib.php");
+		//reCAPTCHA Verification
+        if(!empty($modSettings['recaptcha_enabled']) && ($modSettings['recaptcha_enabled'] == 1 && !empty($modSettings['recaptcha_public_key']) && !empty($modSettings['recaptcha_private_key'])))
+        {
+            $recaptcha = new \ReCaptcha\ReCaptcha($modSettings['recaptcha_private_key']);
 
-			$reCaptcha = new ReCaptcha($modSettings['recaptcha_private_key']);
+            // Was there a reCAPTCHA response?
+            if(isset($_REQUEST["g-recaptcha-response"]))
+            {
+                $resp = $recaptcha->verify($_REQUEST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
 
-			// Was there a reCAPTCHA response?
-			if(isset($_POST["g-recaptcha-response"]))
-			{
-				$resp = $reCaptcha->verifyResponse( $_SERVER["REMOTE_ADDR"], $_POST["g-recaptcha-response"] );
-
-				if (!$resp->success)
-					fatal_lang_error('error_wrong_verification_code', false);
-			}
-			else
-				fatal_lang_error('error_wrong_verification_code', false);
-		}
-		elseif ($thisVerification['show_visual'] && (empty($_REQUEST[$verificationOptions['id'] . '_vv']['code']) || empty($_SESSION[$verificationOptions['id'] . '_vv']['code']) || strtoupper($_REQUEST[$verificationOptions['id'] . '_vv']['code']) !== $_SESSION[$verificationOptions['id'] . '_vv']['code']))
+                if (!$resp->isSuccess())
+                    $verification_errors[] = 'wrong_verification_code';
+            }
+            else
+                $verification_errors[] = 'need_verification_code';
+        }
 ]]></add>
 		</operation>
 	</file>
-
 </modification>
