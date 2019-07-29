@@ -11,7 +11,7 @@ function load_recaptcha()
 {
     global $context;
 
-    $context['html_headers'] .= '<script src="https://www.google.com/recaptcha/api.js"></script>';
+    $context['html_headers'] .= '<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>';
     loadLanguage('Recaptcha');
     loadTemplate(false, 'recaptcha');
 }
