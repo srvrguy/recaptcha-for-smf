@@ -11,6 +11,8 @@
 		<require-dir name="files/recaptcha" destination="$sourcedir" />
 		<require-file name="files/css/recaptcha.css" destination="$themedir/css" />
 		<require-file name="files/language/Recaptcha.english.php" destination="$languagedir" />
+		<require-file name="files/language/Recaptcha.russian.php" destination="$languagedir" />
+		<require-file name="files/language/Recaptcha.russian-utf8.php" destination="$languagedir" />
 		<modification>install.xml</modification>
 		<modification>themes/curve.xml</modification>
 	</install>
@@ -22,6 +24,8 @@
 		<remove-dir name="$sourcedir/recaptcha" />
 		<remove-file name="$themedir/css/recaptcha.css" />
 		<remove-file name="$languagedir/Recaptcha.english.php" />
+		<remove-file name="$languagedir/Recaptcha.russian.php" />
+		<remove-file name="$languagedir/Recaptcha.russian-utf8.php" />
 		<modification reverse="true">install.xml</modification>
 		<modification reverse="true">themes/curve.xml</modification>
 	</uninstall>
